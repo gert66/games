@@ -187,20 +187,24 @@ def laad_css():
         /* Kaart knop stijl — overschrijf Streamlit defaults */
         div[data-testid="stButton"] button {
             width: 100% !important;
-            height: 72px !important;
-            font-size: 1.9em !important;
+            height: 86px !important;
+            font-size: 3em !important;       /* groot genoeg voor duidelijke emoji's */
             border-radius: 12px !important;
             border: none !important;
             cursor: pointer !important;
             transition: transform 0.15s, box-shadow 0.15s !important;
             padding: 0 !important;
-            line-height: 72px !important;
+            line-height: 86px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
         }
 
         /* Dichte kaart */
         div[data-testid="stButton"] button[kind="secondary"] {
             background: linear-gradient(145deg, #1565c0, #1e88e5) !important;
             color: white !important;
+            font-size: 2.6em !important;     /* vraagteken iets kleiner dan dier-emoji */
             box-shadow: 0 4px 10px rgba(21,101,192,0.4) !important;
         }
         div[data-testid="stButton"] button[kind="secondary"]:hover {
